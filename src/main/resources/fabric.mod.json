@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "healthbar",
+  "version": "${version}",
+  "name": "HealthBar",
+  "description": "Shows a colored health bar above mobs and players.",
+  "authors": ["HealthBar contributors"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.vro.healthbar.HealthBarClient"
+    ]
+  },
+  "mixins": [
+    "healthbar.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
